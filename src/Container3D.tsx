@@ -54,7 +54,7 @@ useEffect(() => {
         SET_GOOGLE_MAP(map)
         SET_MAP_CENTER(mapCenter)
     }
-  }, [google])
+  }, [google, SET_GOOGLE_MAP, SET_MAP_CENTER])
 
 
 
