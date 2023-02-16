@@ -1,11 +1,11 @@
 /* eslint-disable array-callback-return */
 import create from "zustand"
 export interface MainState {
+  _id: string
   google: any
   map: any
   meshesArray: any
   mapCenter: any
-  _id: string
   ADD_MESH: (payload: any) => void
   SET_GOOGLE_API: (payload: any) => void
   SET_GOOGLE_MAP: (payload: any) => void

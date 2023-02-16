@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber"
-import { Key, ReactElement, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { ReactElement, useCallback, useEffect, useState } from "react"
 import { Loader } from '@googlemaps/js-api-loader'
 import useZusStore from "./zus"
-import Test3D from "./Test3D"
+import DynamicMeshes from "./DynamicMeshes"
 
 
 const apiOptions = {
@@ -60,7 +60,7 @@ useEffect(() => {
 
   return (
     <>
-        <button onClick={() => ADD_MESH(meshesArray.length) }>Add box</button>
+        <button style={{width:"200px", height:"50px", margin:"28px"}} onClick={() => ADD_MESH(meshesArray.length) }>Click to add dynamic box</button>
         <div id="map" style={{ height: "50vh", width: "100%" }}>
         </div>
         <Canvas>
@@ -70,7 +70,7 @@ useEffect(() => {
                 <boxGeometry />
                 <meshStandardMaterial />
             </mesh>
-                <Test3D/>
+                <DynamicMeshes/>
         </Canvas>
     </ >
     )
