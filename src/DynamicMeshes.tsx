@@ -22,7 +22,7 @@ const {scene} =useThree()
         return (
         <mesh position={[xPos, 0, 0]} onClick={() =>alert(`Hello from dynamic box: ${index}`)} key={`r3f-${index}`}>
           <boxGeometry args={[1,1,1]} attach="geometry" />
-          <meshStandardMaterial color={"purple"} transparent={true}opacity={0.2} attach="material"  />
+          <meshStandardMaterial color={"purple"} opacity={0.2} attach="material"  />
         </mesh> )
       })}  
     </>

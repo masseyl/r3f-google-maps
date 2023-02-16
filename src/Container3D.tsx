@@ -67,8 +67,8 @@ useEffect(() => {
             <ambientLight intensity={0.1} />
             <directionalLight color="red" position={[0, 0, 5]} />
             <mesh onClick={()=>alert("Hello from initial render")}>
-                <boxGeometry />
-                <meshStandardMaterial />
+              <boxGeometry args={[1,1,1]} attach="geometry" />
+              <meshStandardMaterial color={"green"} opacity={0.2} attach="material"  />
             </mesh>
                 <DynamicMeshes/>
         </Canvas>
