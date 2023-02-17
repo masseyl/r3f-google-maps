@@ -26,7 +26,6 @@ const Container3D: React.FC = (): ReactElement => {
     SET_MAP_CENTER
 } = useZusStore(state => state)
 
-  const [map, setMap] = useState<any>(null)
   const mapCenter = {
     lat: 37.34376589426541,
     lng: -121.9308962600858
